@@ -1,5 +1,5 @@
 <template>
-  <span> {{ value }} LOKI </span>
+  <span> {{ value }} COINICLES </span>
 </template>
 
 <script>
