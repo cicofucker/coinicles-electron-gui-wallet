@@ -239,7 +239,7 @@ export default {
     copyViewKey: "Copiar clave de visualización",
     createNewWallet: "Crear nuevo monedero",
     deleteWallet: "Eliminar monedero",
-    exit: "Cerrar la interfaz del monedero Loki",
+    exit: "Cerrar la interfaz del monedero Coinicles",
     importOldGUIWallet: "Importar monedero de una interfaz gráfica antigua",
     manageKeyImages: "Administrar Imágenes de Clave",
     openWallet: "Abrir monedero",
@@ -324,7 +324,7 @@ export default {
     warnings: {
       noKeyImageExport: "No se han encontrado claves para exportar",
       usingLocalNode: "No se ha podido acceder al nodo remoto, volviendo al modo local",
-      usingRemoteNode: "lokid no encontrado, utilizando nodo remoto"
+      usingRemoteNode: "coiniclesd no encontrado, utilizando nodo remoto"
     }
   },
   placeholders: {
@@ -422,7 +422,7 @@ export default {
     seedWords: "Palabras semilla",
     selectLanguage: "Escoja un idioma",
     serviceNodeRegistrationDescription:
-      'Introduzca la orden {registerCommand} generada por el servicio (lokid) que se está intentado registrar como Nodo de Servicio usando la instrucción "{prepareCommand}"',
+      'Introduzca la orden {registerCommand} generada por el servicio (coiniclesd) que se está intentado registrar como Nodo de Servicio usando la instrucción "{prepareCommand}"',
     spendKey: "Clave de gasto",
     startingDaemon: "Iniciando servicio",
     startingWallet: "Iniciando monedero",

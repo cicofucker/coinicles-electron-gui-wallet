@@ -8,7 +8,7 @@
         <q-btn class="cancel" icon="reply" flat round dense @click="cancel()" />
       </template>
 
-      <q-toolbar-title v-if="page_title == 'Loki'">
+      <q-toolbar-title v-if="page_title == 'Coinicles'">
         <div class="flex items-center justify-center" style="margin-top:7px">
           <img src="statics/loki.svg" height="32" />
         </div>

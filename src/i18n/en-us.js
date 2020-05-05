@@ -260,7 +260,7 @@ export default {
     copyViewKey: "Copy view key",
     createNewWallet: "Create new wallet",
     deleteWallet: "Delete Wallet",
-    exit: "Exit Loki GUI Wallet",
+    exit: "Exit Coinicles GUI Wallet",
     importOldGUIWallet: "Import wallets from old GUI",
     manageKeyImages: "Manage Key Images",
     openWallet: "Open wallet",
@@ -361,7 +361,7 @@ export default {
     warnings: {
       noKeyImageExport: "No key images found to export",
       usingLocalNode: "Could not access remote node, switching to local only",
-      usingRemoteNode: "lokid not found, using remote node"
+      usingRemoteNode: "coiniclesd not found, using remote node"
     }
   },
   placeholders: {
@@ -369,7 +369,7 @@ export default {
     addressBookName: "Name that belongs to this address",
     filterTx: "Enter an ID, name, address or amount",
     hexCharacters: "{count} hexadecimal characters",
-    lnsName: "The name to purchase via Loki Name Service",
+    lnsName: "The name to purchase via Coinicles Name Service",
     lnsBackupOwner: "The wallet address of the backup owner",
     lnsDecryptName: "A LNS name that belongs to you",
     mnemonicSeed: "25 (or 24) word mnemonic seed",
@@ -378,7 +378,7 @@ export default {
     proveOptionalMessage: "Optional message against which the signature is signed",
     recipientWalletAddress: "Recipient's wallet address",
     selectAFile: "Please select a file",
-    sessionId: "The Session ID to link to Loki Name Service",
+    sessionId: "The Session ID to link to Coinicles Name Service",
     transactionNotes: "Additional notes to locally attach to the transaction",
     walletName: "A name for your wallet",
     walletPassword: "An optional password for the wallet"
