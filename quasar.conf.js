@@ -159,11 +159,11 @@ module.exports = function(ctx) {
       builder: {
         // https://www.electron.build/configuration/configuration
 
-        appId: "com.loki-project.electron-wallet",
-        productName: "Loki Electron Wallet",
-        copyright: "Copyright © 2018-2019 Loki Project, 2018 Ryo Currency Project",
+        appId: "com.coiniclesdev.electron-wallet",
+        productName: "Coinicles Electron Wallet",
+        copyright: "Copyright © 2020 Coinicles Project, 2018-2019 Loki Project, 2018 Ryo Currency Project",
         afterSign: "build/notarize.js",
-        artifactName: "loki-electron-wallet-${version}-${os}.${ext}",
+        artifactName: "coinicles-electron-wallet-${version}-${os}.${ext}",
         publish: "github",
 
         linux: {

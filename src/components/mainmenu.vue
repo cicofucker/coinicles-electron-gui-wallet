@@ -45,11 +45,11 @@
           <p>
             <a href="#" @click="openExternal('https://t.me/joinchat/DeNvR0JJ4JPn6TVSQjCsZQ')">Telegram</a>
             -
-            <a href="#" @click="openExternal('https://discordapp.com/invite/67GXfD6')">Discord</a>
+            <a href="#" @click="openExternal('https://discord.gg/XeSwMDR')">Discord</a>
             -
-            <a href="#" @click="openExternal('https://www.reddit.com/r/LokiProject/')">Reddit</a>
+            <a href="#" @click="openExternal('https://www.reddit.com/r/Coiniclesdev/')">Reddit</a>
             -
-            <a href="#" @click="openExternal('https://github.com/loki-project/loki-electron-wallet')">Github</a>
+            <a href="#" @click="openExternal('https://github.com/coiniclesdev/coinicles-electron-wallet')">Github</a>
           </p>
         </div>
 

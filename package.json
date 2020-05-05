@@ -1,16 +1,16 @@
 {
-  "name": "loki-electron-wallet",
+  "name": "coinicles-electron-wallet",
   "version": "1.4.2",
-  "description": "Modern GUI interface for Loki Currency",
-  "productName": "Loki Electron Wallet",
+  "description": "Modern GUI interface for Coinicles Currency",
+  "productName": "Coinicles Electron Wallet",
   "repository": {
     "type": "git",
-    "url": "https://github.com/loki-project/loki-electron-gui-wallet.git"
+    "url": "https://github.com/coiniclesdev/coinicles-electron-gui-wallet.git"
   },
-  "cordovaId": "com.lokinetwork.wallet",
+  "cordovaId": "tech.coinicles.wallet",
   "author": {
-    "name": "Loki",
-    "email": "team@loki.network"
+    "name": "Coinicles",
+    "email": "joel.biebuma@uniport.edu.ng"
   },
   "private": true,
   "scripts": {
