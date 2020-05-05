@@ -125,13 +125,13 @@ export class WalletRPC {
         this.hostname = "127.0.0.1";
         this.port = options.wallet.rpc_bind_port;
 
-        const rpcExecutable = process.platform === "win32" ? "loki-wallet-rpc.exe" : "loki-wallet-rpc";
+        const rpcExecutable = process.platform === "win32" ? "coinicles-wallet-rpc.exe" : "coinicles-wallet-rpc";
         // eslint-disable-next-line no-undef
         const rpcPath = path.join(__ryo_bin, rpcExecutable);
 
         // Check if the rpc exists
         if (!fs.existsSync(rpcPath)) {
-          reject(new Error("Failed to find Loki Wallet RPC. Please make sure you anti-virus has not removed it."));
+          reject(new Error("Failed to find Coinicles Wallet RPC. Please make sure you anti-virus has not removed it."));
           return;
         }
 
@@ -2019,9 +2019,9 @@ export class WalletRPC {
       wallets.legacy = [];
       let legacy_paths = [];
       if (os.platform() == "win32") {
-        legacy_paths = ["C:\\ProgramData\\Loki"];
+        legacy_paths = ["C:\\ProgramData\\Coinicles"];
       } else {
-        legacy_paths = [path.join(os.homedir(), "Loki")];
+        legacy_paths = [path.join(os.homedir(), "Coinicles")];
       }
       for (var i = 0; i < legacy_paths.length; i++) {
         try {

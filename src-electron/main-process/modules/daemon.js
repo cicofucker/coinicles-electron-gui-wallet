@@ -20,15 +20,15 @@ export class Daemon {
 
     // Settings for timestamp to height conversion
     // These are initial values used to calculate the height
-    this.PIVOT_BLOCK_HEIGHT = 119681;
-    this.PIVOT_BLOCK_TIMESTAMP = 1539676273;
+    this.PIVOT_BLOCK_HEIGHT = 100;
+    this.PIVOT_BLOCK_TIMESTAMP = 1588481802;
     this.PIVOT_BLOCK_TIME = 120;
   }
 
   checkVersion() {
     return new Promise(resolve => {
       if (process.platform === "win32") {
-        let lokid_path = path.join(__ryo_bin, "lokid.exe");
+        let lokid_path = path.join(__ryo_bin, "coiniclesd.exe");
         let lokid_version_cmd = `"${lokid_path}" --version`;
         if (!fs.existsSync(lokid_path)) {
           resolve(false);
@@ -40,7 +40,7 @@ export class Daemon {
           resolve(stdout);
         });
       } else {
-        let lokid_path = path.join(__ryo_bin, "lokid");
+        let lokid_path = path.join(__ryo_bin, "coiniclesd");
         let lokid_version_cmd = `"${lokid_path}" --version`;
         if (!fs.existsSync(lokid_path)) {
           resolve(false);
@@ -145,7 +145,7 @@ export class Daemon {
         args.push("--stagenet");
       }
 
-      args.push("--log-file", path.join(dirs[net_type], "logs", "lokid.log"));
+      args.push("--log-file", path.join(dirs[net_type], "logs", "coiniclesd.log"));
       if (daemon.rpc_bind_ip !== "127.0.0.1") {
         args.push("--confirm-external-bind");
       }
@@ -166,9 +166,9 @@ export class Daemon {
         .then(status => {
           if (status === "closed") {
             if (process.platform === "win32") {
-              this.daemonProcess = child_process.spawn(path.join(__ryo_bin, "lokid.exe"), args);
+              this.daemonProcess = child_process.spawn(path.join(__ryo_bin, "coiniclesd.exe"), args);
             } else {
-              this.daemonProcess = child_process.spawn(path.join(__ryo_bin, "lokid"), args, {
+              this.daemonProcess = child_process.spawn(path.join(__ryo_bin, "coiniclesd"), args, {
                 detached: true
               });
             }

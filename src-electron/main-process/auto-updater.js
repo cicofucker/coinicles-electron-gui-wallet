@@ -60,8 +60,8 @@ async function showUpdateDialog(mainWindow) {
   const options = {
     type: "info",
     buttons: ["Restart Wallet", "Later"],
-    title: "Loki Electron Wallet update available",
-    message: "There is a new version of Loki Electron Wallet available.",
+    title: "Coinicles Electron Wallet update available",
+    message: "There is a new version of Coinicles Electron Wallet available.",
     detail: "Press Restart Wallet to apply the update",
     defaultId: LATER_BUTTON,
     cancelId: RESTART_BUTTON
@@ -79,7 +79,7 @@ async function showCannotUpdateDialog(mainWindow) {
     buttons: ["Ok"],
     title: "Cannot update",
     message:
-      "Loki Electron Wallet failed to update but there is a new version available. Please go to https://loki.network/ and install the new version manually."
+      "Coinicles Electron Wallet failed to update but there is a new version available. Please go to https://site.coinicles.tech/ and install the new version manually."
   };
 
   return new Promise(resolve => {

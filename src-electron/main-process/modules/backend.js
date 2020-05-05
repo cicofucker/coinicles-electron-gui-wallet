@@ -25,11 +25,11 @@ export class Backend {
 
   init(config) {
     if (os.platform() === "win32") {
-      this.config_dir = "C:\\ProgramData\\loki";
-      this.wallet_dir = `${os.homedir()}\\Documents\\Loki`;
+      this.config_dir = "C:\\ProgramData\\coinicles";
+      this.wallet_dir = `${os.homedir()}\\Documents\\Coinicles`;
     } else {
-      this.config_dir = path.join(os.homedir(), ".loki");
-      this.wallet_dir = path.join(os.homedir(), "Loki");
+      this.config_dir = path.join(os.homedir(), ".coinicles");
+      this.wallet_dir = path.join(os.homedir(), "Coinicles");
     }
 
     if (!fs.existsSync(this.config_dir)) {
@@ -45,11 +45,11 @@ export class Backend {
     const daemon = {
       type: "remote",
       p2p_bind_ip: "0.0.0.0",
-      p2p_bind_port: 22022,
+      p2p_bind_port: 32022,
       rpc_bind_ip: "127.0.0.1",
-      rpc_bind_port: 22023,
+      rpc_bind_port: 32023,
       zmq_rpc_bind_ip: "127.0.0.1",
-      zmq_rpc_bind_port: 22024,
+      zmq_rpc_bind_port: 32024,
       out_peers: -1,
       in_peers: -1,
       limit_rate_up: -1,
@@ -60,8 +60,8 @@ export class Backend {
     const daemons = {
       mainnet: {
         ...daemon,
-        remote_host: "imaginary.stream",
-        remote_port: 22023
+        remote_host: "seed.coinicles.tech",
+        remote_port: 32023
       },
       stagenet: {
         ...daemon,
@@ -104,24 +104,24 @@ export class Backend {
 
     this.remotes = [
       {
-        host: "doopool.xyz",
-        port: "22020"
+        host: "seed.coinicles.tech",
+        port: "32020"
       },
       {
-        host: "imaginary.stream",
-        port: "22023"
+        host: "public.coinicles.tech",
+        port: "32023"
       },
       {
-        host: "nodes.hashvault.pro",
-        port: "22023"
+        host: "seed.coinicles.tech",
+        port: "32023"
       },
       {
-        host: "explorer.loki.aussie-pools.com",
+        host: "coinicles.tech",
         port: "18081"
       },
       {
-        host: "public.loki.foundation",
-        port: "22023"
+        host: "public-node.coinicles.tech",
+        port: "32023"
       }
     ];
 
@@ -256,7 +256,7 @@ export class Backend {
         }
 
         if (path) {
-          const baseUrl = net_type === "testnet" ? "https://lokitestnet.com" : "https://lokiblocks.com";
+          const baseUrl = net_type === "testnet" ? "https://testnet.coinicles.tech" : "https://coinicles.tech";
           const url = `${baseUrl}/${path}/`;
           require("electron").shell.openExternal(url + params.id);
         }

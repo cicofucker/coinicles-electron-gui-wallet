@@ -1946,10 +1946,10 @@ return{_strlen:lb,_ge_mul8:Va,_keccak:db,_ge_scalarmult:Ta,_ge_fromfe_frombytes_
 
 
 var lokiConfig = {
-    coinUnitPlaces: 12,
-    coinSymbol: 'LOKI',
-    coinName: 'Loki',
-    coinUriPrefix: 'loki:',
+    coinUnitPlaces: 9,
+    coinSymbol: 'CNCO',
+    coinName: 'Coinicles',
+    coinUriPrefix: 'coinicles:',
     addressPrefix: 114,
 };
 
