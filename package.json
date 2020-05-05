@@ -22,7 +22,9 @@
     "ready": "npm run lint && npm run format"
   },
   "dependencies": {
+    "ansi-styles": "^4.2.1",
     "axios": "^0.18.1",
+    "bufferutil": "^4.0.1",
     "electron-is-dev": "^1.0.1",
     "electron-updater": "^4.2.0",
     "electron-window-state": "^5.0.3",
@@ -35,6 +37,7 @@
     "request": "^2.88.0",
     "request-promise": "^4.2.4",
     "upath": "^1.2.0",
+    "utf-8-validate": "^5.0.2",
     "vue-i18n": "^8.9.0",
     "vue-timeago": "^5.1.2",
     "vuelidate": "^0.7.4"
@@ -59,7 +62,7 @@
     "eslint-plugin-vue": "^5.2.3",
     "husky": "^4.2.3",
     "lint-staged": "^10.0.8",
-    "node-sass": "^4.13.1",
+    "node-sass": "^4.13.0",
     "prettier": "^1.19.1",
     "quasar-cli": "^0.17.26",
     "sass-loader": "^7.1.0",
