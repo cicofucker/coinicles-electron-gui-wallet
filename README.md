@@ -6,7 +6,7 @@ Coinicles is a private cryptocurrency based on Loki and Monero. Coinicles aims t
 More information on the project can be found on the [website](https://site.coinicles.tech) and in the [whitepaper](https://site.coinicles.tech/whitepaper). Coinicles is an open source project, and we encourage contributions from anyone with something to offer.
 
 <p align="center">
- <img src="https://raw.githubusercontent.com/coiniclesdev/coinicles-electron-gui-wallet/master/src-electron/icons/mrcuu.PNG" width="600">
+ <img src="https://raw.githubusercontent.com/coiniclesdev/coinicles-electron-gui-wallet/development/src-electron/icons/mrcuu.PNG" width="600">
 </p>
 
 ### About this project
