@@ -9,7 +9,7 @@ export default ({ Vue }) => {
       fr: require("date-fns/locale/fr"),
       es: require("date-fns/locale/es"),
       pt: require("date-fns/locale/pt"),
-      cn: require("date-fns/locale/cn")
+      zh_cn: require("date-fns/locale/zh_cn")
 
     }
   });
