@@ -7,7 +7,9 @@ const languages = [
   { name: "German", code: "de", flag: "de" },
   { name: "French", code: "fr", flag: "fr" },
   { name: "Spanish", code: "es", flag: "es" },
-  { name: "Portuguese", code: "pt-br", flag: "pt" }
+  { name: "Portuguese", code: "pt-br", flag: "pt" },
+  { name: "China", code: "zh_cn", flag: "cn" }
+
 ];
 
 export { languages };
